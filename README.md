@@ -12,8 +12,4 @@ Simple starter kit for [Bootstrap 3.1 + Sass] in Mixture
 - Add images in app/img
 - Add fonts in app/fonts
 
-```
-    Please feel free to edit, improve or modify whatever you want :)
-```
-
-Created by Kike Domingo - www.kikedomingo.com
+Thanks to [Kike Domingo](http://www.kikedomingo.com) for the original repo
