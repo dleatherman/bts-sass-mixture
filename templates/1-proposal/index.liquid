@@ -1,0 +1,55 @@
+{% block content %}
+<div class="row">
+  <div class="col-sm-8 col-md-7">
+    <h1>We are purpose and goal-driven</h1>
+    {% include 'purpose' %}
+  </div>
+  <div class="col-sm-4 col-md-4 col-md-offset-1">
+    {% comment %}
+      Place hi-res client logo in the top folder named package.png
+    {% endcomment %}
+    {{ 'package.png' | asset_url | image_tag }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <hr>
+  </div>
+</div>
+
+{% for num in (1...3) %}
+
+<div class="row">
+  <div class="col-sm-8">
+    <h2>{{ num }}. Option <small>$Price</small> <a href="mailto:dan@permalightnyc.com?subject=Proposal&body=Option {{ num }} sounds great. Let's get started!" class="btn btn-primary pull-right">Choose</a></h2>
+    {% comment %}
+      These are specifics to this solution such as:
+      Will we host the site?
+      Will we partner with the client for a strategic growth plan?
+      Is this a work-for-hire project?
+      Should we be considered investors in the platform?
+    {% endcomment %}
+    <p class="lead">Description about solution...lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, ipsa, sunt dicta exercitationem dolores nulla architecto illum velit omnis eos impedit expedita sapiente voluptates earum aperiam ea reiciendis officiis quam.</p>
+  </div>
+  <div class="col-sm-4">
+    <div class="well">
+      <h4>Timeline</h4>
+      <ul>
+        <li># Months</li>
+      </ul>
+      <h4>Payment Terms</h4>
+      <ul>
+        <li>Specific Payment Details</li>
+      </ul>
+      {% comment %}
+        Include additional required costs and other fees incurred. We don't surprise clients with charges. If something comes up we didn't foresee, we pay for it.
+      {% endcomment %}
+    </div>
+  </div>
+</div>
+
+{% include 'div' %}
+
+{% endfor %}
+
+{% endblock %}

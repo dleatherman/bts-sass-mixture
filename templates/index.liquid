@@ -1,26 +1,22 @@
 {% block content %}
 
-<h1>Bootstrap 3.1 + Sass</h1>
+  {% include 'welcome' %}
 
-<p>
-This is a quick and simple setup for using <a href="https://github.com/twbs/bootstrap-sass">Bootstrap-Sass</a> in Mixture.
-</p>
-<p>
-It currently uses Bootstrap-Sass v3.1.0, and has Autoprefixer activated.
-</p>
-
-
-<ul>
-	<li>Add javascript in assets/javascripts/application.js</li>
-	<li>Edit styles in assets/stylesheets/style.scss</li>
-	<li>Edit MEDIAQUERIES in assets/stylesheets/_mediaqueries.scss</li>
-	<li>Edit variables in assets/stylesheets/_variables.scss (Own and Bootstrap)</li>
-	<li>Add images in app/img</li>
-	<li>Add fonts in app/fonts</li>
-</ul>
-
-<a href="/example">Example page.</a>
-<br><br>
-<div class="well"><a href="https://github.com/kikedomingo/bts-sass-mixture" target="_blank">Feel free to modify the boilerplate in Github.</a></div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Project Title</h3>
+      <p class="lead">The following is a detailed outline of our project process for creating a new website or service.</p>
+      <ol>
+        <li><a href="/1-proposal">Proposal</a></li>
+        <li>Agreement</li>
+        <li>Prototype</li>
+        <li>Visual Design</li>
+        <li>Development</li>
+        <li>Launch</li>
+        <li>Review</li>
+      </ol>
+    </div>
+    <div class="col-md-4- col-md-offset-2"></div>
+  </div>
 
 {% endblock %}

@@ -15,8 +15,8 @@
   "preprocessorLocations": "assets,app/css,app/js",
   "preprocessorScriptOutput": "app/js",
   "preprocessorStyleOutput": "app/css",
-  "projectDescription": "Bootstrap 3.1 + Official Sass port starter kit.",
-  "projectName": "Bootstrap 3.1 + Sass - Starter kit",
+  "projectDescription": "A client hub starter created for mixture.",
+  "projectName": "Client Hub Starter",
   "publishedId": null,
   "serverHostname": null,
   "serverPort": null,
@@ -32,5 +32,8 @@
     "username": "yyy",
     "password": "yyy",
     "path": "www/yyy"
-  }
+  },
+  "routes": [
+    { "route": "1-proposal", "template": "1-proposal/index", "redirect": null }
+  ]
 }
